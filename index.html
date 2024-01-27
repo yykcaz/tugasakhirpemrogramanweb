@@ -1,0 +1,720 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<title>PHOBIA</title>
+<body style="background-image: url('gradasi2.gif'); background-size: cover; background-position: center;">
+<style>
+#mySidebar {
+    width: 181px;
+	height: 100%;
+    position: fixed;
+    background-position: left;
+    background-image: url('muter.gif');
+    background-size: cover;
+    padding-top: 10px;
+    display: none;
+    z-index: 1;
+}
+tombolmenu {
+      font-size: 25px;
+      position: fixed;
+      left: 50px;
+      top: 26px;
+      z-index: 2;
+      margin-right: 250px;
+}
+back {
+      font-size: 15px;
+      position: fixed;
+      right: 20px;
+      bottom: 133px;
+      z-index: 2; 
+}
+backk {
+      font-size: 15px;
+      position: fixed;
+      right: 20px;
+      bottom: 90px;
+      z-index: 2; 
+}
+backkk {
+      font-size: 11px;
+      position: fixed;
+      right: 5px;
+      bottom: 5px;
+      z-index: 2; 
+}
+suara {
+opacity: 0;
+z-index: 2;
+position: fixed;
+left: 120px;
+top: 27px;
+}
+tombolsuara {
+opacity: 1;
+z-index: 1;
+position: fixed;
+left: 128px;
+top: 35px;
+}
+warm {
+z-index: 1;
+position: fixed;
+left: 170px;
+top: 44px;
+font-family: creepster;
+font-size: 12;
+}
+warning {
+position: fixed;
+left: 1285px;
+bottom: 23px;
+z-index: 3; 
+}
+warning2{
+font-size: 13;
+font-family: cursive ;
+position: fixed;
+left: 465px;
+bottom: 30px;
+z-index: 3; 
+}
+hpengertian {
+font-family : creepster;
+}
+hbanner {
+font-family : creepster;
+font-weight: bold;
+}
+</style>
+<tombolsuara><img src="button.png" style="width:7%; height;7%;"></tombolsuara><warm class="w3-animate-fading">"Click the button and increase the volume for a more thrilling experience."</warm>
+<suara><audio controls autoplay loop>
+  <source src="heartbeat.mp3" type="audio/mp3">
+</audio></suara>
+<tombolmenu><button class="w3-button w3-bar-item w3-black w3-button-menu" onclick="toggleSidebar()">☰</button></tombolmenu>
+<div class="w3-container" style="background-image: url('baner2.gif'); background-size: cover; background-position: center;">
+ <div class="w3-text-black w3-center w3-xxxlarge w3-panel w3-bold w3-card-4" style="font-family: creepster; background-image: url('baner2.gif'); background-size: cover; background-position: center;">PHOBIA
+ </div>
+</div>
+<div id="mySidebar" class="w3-sidebar w3-bar-block w3-animate-left w3-indigo" style="height: 100%; opacity: 1;">
+<hpengertian><h5 class="w3-bar-item w3-black w3-center w3-animate-left w3-text-black" style="background-image: url('baner2.gif'); background-size: cover; background-position: center;"><strong>MENU</strong></h5> 
+   <button class="w3-bar-item w3-button w3-animate-left w3-animate-left w3-white w3-text-black tab" onclick="openAkhir(event, 'home')"><center>HOME</button><br>
+  <button class="w3-bar-item w3-button w3-animate-left w3-animate-left w3-white w3-text-black tab" onclick="openAkhir(event, 'biodata')"><center>PROFILE</button><br>
+  <button class="w3-bar-item w3-button w3-animate-left w3-animate-left w3-black w3-text-white tab" onclick="openAkhir(event, 'definisi')">DEFINISI</button>
+  <button class="w3-bar-item w3-button w3-animate-left w3-animate-left w3-black w3-text-white tab" onclick="openAkhir(event, 'ciriciri')">CIRI - CIRI</button>
+<div class="w3-dropdown-hover">
+   <button class="w3-bar-item w3-button w3-animate-left w3-black w3-text-white w3-bold">JENIS - JENIS</button>
+     <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-medium">
+      <button class="w3-bar-item w3-button w3-animate-left tab" onclick="openAkhir(event, 'megalophobia')">MEGALOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-right tab" onclick="openAkhir(event, 'claustrophobia')">CLAUSTROPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-left tab" onclick="openAkhir(event, 'trypophobia')">TRYPOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-right tab" onclick="openAkhir(event, 'thalassophobia')">THALASSOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-left tab" onclick="openAkhir(event, 'acrophobia')">ACROPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-right tab" onclick="openAkhir(event, 'astraphobia')">ASTRAPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-left tab" onclick="openAkhir(event, 'nyctophobia_achluophobia')">NYCTOPHOBIA & ACHLUOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-right tab" onclick="openAkhir(event, 'coulrophobia')">COULROPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-left tab" onclick="openAkhir(event, 'entomophobia_insectophobia')">ENTOMOPHOBIA / INSECTOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-right tab" onclick="openAkhir(event, 'photophobia')">PHOTOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-left tab" onclick="openAkhir(event, 'scopophobia_phthalmophobia')">SCOPOPHOBIA / OPHTHALMOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-right tab" onclick="openAkhir(event, 'ailurophobia')">AILUROPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-left tab" onclick="openAkhir(event, 'automatonophobia')">AUTOMATONOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-right tab" onclick="openAkhir(event, 'trypanophobia')">TRYPANOPHOBIA</button>
+	  <button class="w3-bar-item w3-button w3-animate-left tab" onclick="openAkhir(event, 'chromophobia_chromatophobia')">CHROMOPHOBIA / CHROMATOPHOBIA</button>
+	  <button class="w3-bar-item w3-button"></button><button class="w3-bar-item w3-button"></button><button class="w3-bar-item w3-button"></button>
+	  <button class="w3-bar-item w3-button"></button><button class="w3-bar-item w3-button"></button><button class="w3-bar-item w3-button"></button>
+	  <button class="w3-bar-item w3-button"></button>
+	  </hpengertian>
+	 </div>
+ </div>
+ <button class="w3-bar-item w3-button w3-animate-left w3-animate-left w3-black w3-text-white tab" onclick="openAkhir(event, 'caramengatasi')">CARA MENGATASI</button><br>
+ <button class="w3-bar-item w3-button w3-animate-left w3-animate-left w3-text-white w3-white tab" onclick="openAkhir(event, 'akhirkata')"><center><img src="circle.png" style="width :12%; height :12%"><img src="circle.png" style="width :12%; height :12%"><img src="circle.png" style="width :12%; height :12%"></button></center>
+
+ </div>
+ <!--HOME-->
+<div id="home" class="akhir w3-animate-zoom w3-container" style="display:none"><br><br><br>
+<center><img src="phobia.gif" class="w3-card-4" style="width :60%; height :65%; border :10px solid black; box-shadow: 0 4px 8px rgba(10, 10, 10, 10);">
+<backkk><button class="w3-bar-item w3-button w3-animate-zoom w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backkk>
+</div>
+ 
+<!--PROFILE-->
+<div id="biodata" class="akhir w3-animate-right" style="display:none">
+	     <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black w3-xlarge"><strong>PROFILE</strong></div> </hbanner>
+		   <div class="w3-container">
+		   <h1><center>
+	<table border="1px" class="w3-xlarge" style="font-family :creepster;">
+	<tr bgcolor=white><td><center>NAMA<td><center>ZACKY VERZANICO PUTRA<th rowspan=6><img src="saya.jpeg" style="width :295px; height :453px;">
+	<tr bgcolor=white><td><center>NIM<td><center>10123424
+	<tr bgcolor=white><td><center>PRODI<td><center>TEKNIK INFORMATIKA
+	<tr bgcolor=white><td><center>KELAS<td><center>IF-10
+	<tr bgcolor=white><td><center>ANGKATAN<td><center>2023
+	<tr bgcolor=white><td colspan=2><center><a href="https://www.instagram.com/zackyputraa_?igsh=dTJxMWV5Z3Q3amps"><img src="instagram.png" style="width :18%; height :18%"></a>
+	</table>
+	</h1></center>
+	<backkk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backkk>
+</div>
+</div>
+
+<!--DEFINISI-->
+<div id="definisi" class="akhir w3-animate-right" style="display:none">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black"><strong>DEFINISI</strong></div> </hbanner>
+	<hpengertian> <p class="w3-large w3-container">Phobia adalah istilah medis yang digunakan untuk menggambarkan ketakutan yang berlebihan dan tidak rasional terhadap suatu objek, situasi, atau keadaan tertentu. Orang yang mengalami phobia, yang dikenal sebagai phobiaan, biasanya mengalami kecemasan atau rasa takut yang sangat intens ketika dihadapkan dengan stimulus pemicu (trigger) phobia mereka.
+phobia dapat mencakup berbagai jenis objek atau situasi, dan mereka dapat mempengaruhi berbagai aspek kehidupan seseorang. Contoh phobia yang umum termasuk acrophobia (ketakutan akan ketinggian), arachnophobia (ketakutan akan laba-laba), dan agoraphobia (ketakutan akan tempat umum atau situasi sulit melarikan diri).
+phobia dapat berkembang dari berbagai pengalaman, termasuk trauma, pengalaman negatif masa kecil, atau bahkan keturunan. Pengelolaan phobia sering melibatkan terapi kognitif, terapi perilaku, atau terapi desensitisasi, yang bertujuan untuk membantu individu mengatasi dan mengurangi ketakutan mereka.
+Penting untuk dicatat bahwa phobia berbeda dengan kecemasan umum atau ketakutan yang dapat dialami oleh banyak orang dalam situasi tertentu. Phobia sering kali bersifat lebih intens dan dapat memiliki dampak yang signifikan pada kehidupan sehari-hari seseorang jika tidak dikelola dengan baik. Jika seseorang merasa phobia mereka mengganggu kehidupan mereka, penting untuk mencari bantuan dari profesional kesehatan mental.</p></hpengertian>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+</div>
+
+<!--CIRI-CIRI-->
+<div id="ciriciri" class="akhir w3-animate-right" style="display:none;">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">CIRI - CIRI</div> </hbanner>
+	<table style="font-family :creepster; font-size :20px;">
+	<tr><th background="baner2.gif">NO<th background="baner2.gif">CIRI - CIRI<th background="baner2.gif">PENJELASAN
+	<tr bgcolor=white><td><center>1<td>Reaksi Kekhawatiran yang Intens <td>Seseorang dengan phobia akan merasakan kekhawatiran atau ketakutan yang sangat intens terhadap objek atau situasi tertentu, bahkan jika risikonya sebenarnya kecil atau tidak ada.
+	<tr bgcolor=white><td><center>2<td>Reaksi Fisik yang Kuat <td>Ketakutan tersebut sering disertai dengan reaksi fisik yang kuat seperti keringat dingin, gemetar, jantung berdebar-debar, mual, atau sesak napas.
+	<tr bgcolor=white><td><center>3<td>Penghindaran Aktivitas atau Tempat Tertentu :<td>Orang dengan phobia cenderung menghindari objek atau situasi yang menimbulkan ketakutan mereka. Penghindaran ini dapat membatasi kehidupan sehari-hari dan aktivitas sosial.
+	<tr bgcolor=white><td><center>4<td>Reaksi yang Tidak Rasional <td>Respon ketakutan terhadap objek atau situasi phobia seringkali tidak sesuai dengan tingkat risiko yang sebenarnya. Meskipun orang dengan phobia tahu bahwa ketakutan mereka mungkin tidak masuk akal, mereka sulit mengendalikannya.
+	<tr bgcolor=white><td><center>5<td>Durasi yang Panjang <td>Ketakutan phobia biasanya berlangsung selama enam bulan atau lebih dan dapat berlangsung bertahun-tahun jika tidak diobati.
+	<tr bgcolor=white><td><center>6<td>Gangguan terhadap Kehidupan Sehari-hari <td>Phobia dapat mengganggu fungsi sehari-hari seseorang. Misalnya, seseorang yang takut terhadap ketinggian mungkin sulit menggunakan tangga atau naik lift.
+	<tr bgcolor=white><td><center>7<td>Menyebabkan Kecemasan Berlebihan <td>Hanya berpikir atau mendekati objek atau situasi yang menjadi phobia dapat menyebabkan kecemasan yang berlebihan.
+	<tr bgcolor=white><td><center>8<td>Pemahaman tentang Ketidakwajaran <td>Penderita phobia umumnya menyadari bahwa ketakutan mereka tidak masuk akal, namun mereka sulit mengendalikannya.
+	<tr bgcolor=white><td><center>9<td>Bisa Muncul pada Segala Usia <td>Phobia bisa dimulai pada masa anak-anak, remaja, atau dewasa. Beberapa phobia tertentu lebih umum muncul pada periode perkembangan tertentu.
+	</table>
+	<backkk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backkk>
+</div>
+
+<!--CARA MENGATASI-->
+<div id="caramengatasi" class="akhir w3-animate-right" style="display:none">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black"><strong>CARA MENGATASI</strong></div> </hbanner>
+<table style="font-family :creepster; font-size :20px;">
+<tr><th background="baner2.gif">NO<th background="baner2.gif">CARA MENGATASI<th background="baner2.gif">PENJELASAN
+<tr bgcolor=white><td><center>1<td>Pahami Phobia Anda <td>Kenali dan identifikasi phobia Anda. Pahami apa yang memicu ketakutan tersebut.
+<tr bgcolor=white><td><center>2<td>Cari Bantuan Profesional <td>Konsultasikan dengan seorang profesional kesehatan mental seperti psikolog atau psikiater. Mereka dapat membantu Anda memahami lebih lanjut dan mengatasi phobia.
+<tr bgcolor=white><td><center>3<td>Terapi Perilaku Kognitif <td>Terapi ini fokus pada mengidentifikasi dan mengubah pola pikir yang salah terkait dengan phobia. Hal ini dapat membantu Anda menghadapi dan mengatasi ketakutan tersebut.
+<tr bgcolor=white><td><center>4<td>Terapi Eksposur <td>Terapi eksposur melibatkan paparan bertahap terhadap objek atau situasi yang menimbulkan phobia. Ini dapat membantu Anda membangun toleransi terhadap ketakutan tersebut.
+<tr bgcolor=white><td><center>5<td>Relaksasi dan Teknik Pernapasan <td>Teknik-teknik relaksasi seperti meditasi, yoga, atau latihan pernapasan dapat membantu mengelola kecemasan yang terkait dengan phobia.
+<tr bgcolor=white><td><center>6<td>Dukungan Sosial <td>Berbicara dengan teman, keluarga, atau anggota kelompok dukungan dapat memberikan dukungan emosional yang penting.
+<tr bgcolor=white><td><center>7<td>Obat-obatan <td>Beberapa kasus phobia dapat memerlukan penggunaan obat-obatan, terutama jika tingkat kecemasan sangat tinggi. Ini harus diawasi oleh seorang profesional kesehatan.
+<tr bgcolor=white><td><center>8<td>Latihan Keterampilan Mengatasi Stres <td>Pelajari keterampilan mengatasi stres untuk membantu Anda menghadapi tantangan hidup dengan lebih baik secara umum.
+<tr bgcolor=white><td><center>9<td>Ambil Langkah Kecil <td>Mulailah dengan mengambil langkah kecil dalam menghadapi phobia Anda. Jangan terburu-buru dan beri diri Anda waktu untuk berkembang.
+<tr bgcolor=white><td><center>10<td>Konsistensi <td>Konsistensi dalam melibatkan diri dalam proses mengatasi phobia sangat penting. Teruslah bekerja sama dengan profesional kesehatan dan terapkan teknik yang telah Anda pelajari.
+</table>
+<backkk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backkk>
+		   
+</div>
+
+<!--MEGALOPHOBIA-->
+<div id="megalophobia" class="akhir w3-animate-right" style="display:none">
+	    <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">MEGALOPHOBIA</div> </hbanner>
+	    <hpengertian><p class="w3-large w3-container">Megalophobia adalah suatu kondisi atau ketakutan yang ekstrem terhadap objek atau benda yang memiliki ukuran atau dimensi yang sangat besar. Orang yang mengidap megalophobia mungkin akan merasa cemas, panik, atau ketakutan yang berlebihan ketika dihadapkan dengan objek-objek raksasa, seperti bangunan tinggi, objek besar seperti kapal atau pesawat, atau benda-benda besar lainnya.
+        Reaksi terhadap megalophobia dapat bervariasi dari satu individu ke individu lainnya. Beberapa orang mungkin mengalami ketidaknyamanan ringan, sementara yang lain bisa mengalami reaksi yang lebih parah, termasuk serangan panik. Terapi kognitif atau perilaku dan pendekatan psikoterapi lainnya dapat digunakan untuk membantu individu yang mengalami megalophobia dalam mengelola dan mengatasi ketakutannya.</p></hpengertian>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_megalophobia')">NEXT</button></back>
+	<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+	<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_megalophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">MEGALOPHOBIA</div> </hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="kapalbesar.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack1()">BACK</button><back>
+</div>
+
+<!--CLAUSTROPHOBIA-->
+<div id="claustrophobia" class="akhir w3-animate-right" style="display:none">
+	    <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">CLAUSTROPHOBIA</div> </hbanner>
+	<hpengertian><p class="w3-large w3-container">Claustrophobia adalah kondisi psikologis yang ditandai oleh rasa takut atau kecemasan yang intens terhadap situasi atau tempat tertutup atau sempit. Orang yang mengalami claustrophobia, yang disebut claustrophobic, dapat merasakan ketakutan yang berlebihan ketika mereka berada di dalam ruangan kecil, terowongan, mobil, atau tempat-tempat lain yang terbatas.
+Gejala claustrophobia dapat bervariasi, termasuk napas pendek, detak jantung yang cepat, keringat berlebihan, gemetar, dan mungkin serangan panik. Rasa ketakutan ini dapat membatasi aktivitas sehari-hari individu yang mengalami claustrophobia karena mereka mencoba untuk menghindari situasi atau tempat yang dapat memicu kecemasan.
+Pendekatan psikoterapi, terapi perilaku kognitif, dan teknik relaksasi sering digunakan untuk membantu individu mengelola dan mengatasi claustrophobia. Dalam beberapa kasus, terapi obat-obatan juga dapat dipertimbangkan oleh profesional kesehatan mental.</p></hpengertian>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_claustrophobia')">NEXT</button></back>
+	<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+	<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_claustrophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">CLAUSTROPHOBIA</div> </hbanner>
+   <center>    <video width="100%" height="496" controls autoplay loop>
+           <source src="ruangsempit.mp4" type="video/mp4">
+        </video> </center>  
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack2()">BACK</button><back>
+</div>
+
+<!--TRYPOPHOBIA-->
+<div id="trypophobia" class="akhir w3-animate-right" style="display:none">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">TRYPOPHOBIA</div> </hbanner>
+	<hpengertian><p class="w3-large w3-container">Trypophobia adalah kondisi atau ketakutan terhadap pola lubang atau cluster kecil yang teratur. Orang yang mengalami trypophobia mungkin merasa tidak nyaman, cemas, atau bahkan merasa jijik ketika melihat gambar atau objek dengan pola lubang seperti sarang lebah, biji-bijian yang terkumpul, atau pola berulang yang serupa.
+Reaksi terhadap trypophobia dapat bervariasi dari satu individu ke individu lainnya. Beberapa orang mungkin mengalami gejala ringan, sementara yang lain bisa mengalami reaksi yang lebih intens. Kondisi ini belum sepenuhnya dipahami oleh ilmu pengetahuan dan masih menjadi subjek penelitian lebih lanjut dalam bidang psikologi.
+Penting untuk dicatat bahwa tingkat keparahan dan dampak trypophobia dapat berbeda-beda antara individu, dan jika seseorang merasa terganggu oleh kondisi ini, disarankan untuk berkonsultasi dengan profesional kesehatan mental untuk mendapatkan dukungan atau penanganan yang sesuai.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_trypophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_trypophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">TRYPOPHOBIA</div> </hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="bolong.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack3()">BACK</button><back>
+</div>
+
+<!--THALASSOPHOBIA-->
+<div id="thalassophobia" class="akhir w3-animate-right" style="display:none">
+	    <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">THALASSOPHOBIA</div> </hbanner>
+<hpengertian>	<p class="w3-large w3-container">Thalassophobia adalah istilah untuk menggambarkan ketakutan atau kecemasan terhadap laut atau lautan yang dalam. Orang yang mengalami thalassophobia mungkin merasa takut atau cemas ketika berada di sekitar atau mendekati air laut yang luas, atau bahkan ketika berpikir tentang kedalaman laut yang tidak terlihat. Thalassophobia dapat mencakup ketakutan terhadap objek atau kejadian tertentu di laut, seperti hewan laut besar, kegelapan di dalam air, atau hanya kehampaan yang ditemui di tengah laut.
+Seperti kebanyakan jenis phobia, thalassophobia dapat memengaruhi seseorang secara emosional dan fisik. Gejala umum yang terkait dengan thalassophobia melibatkan kecemasan, ketegangan otot, keringat berlebihan, mual, atau bahkan serangan panik ketika seseorang terpapar stimulus yang memicu ketakutan mereka terhadap laut atau lautan.
+Setiap individu memiliki tingkat ketakutan yang berbeda-beda, dan thalassophobia mungkin berasal dari berbagai pengalaman atau trauma masa lalu yang terkait dengan laut. Terapi perilaku kognitif, terapi eksposur, atau teknik relaksasi dapat digunakan untuk membantu seseorang mengelola atau mengatasi thalassophobia.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_thalassophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_thalassophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">THALASSOPHOBIA</div> </hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="tenggelam.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack4()">BACK</button><back>
+</div>
+
+<!--ACROPHOBIA-->
+<div id="acrophobia" class="akhir w3-animate-right" style="display:none">
+	    <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">ACROPHOBIA</div> </hbanner>
+	<hpengertian><p class="w3-large w3-container">Acrophobia adalah istilah yang digunakan untuk menggambarkan ketakutan yang berlebihan terhadap ketinggian atau tempat yang tinggi. Orang yang mengalami acrophobia mungkin merasa cemas, panik, atau takut ketika berada di tempat-tempat tinggi, seperti gedung pencakar langit, jembatan tinggi, atau pegunungan.
+Gejala acrophobia bisa bervariasi dari ketegangan otot, keringat berlebihan, dan denyut jantung yang cepat hingga serangan panik yang parah. Beberapa orang dengan acrophobia mungkin menghindari sepenuhnya situasi atau tempat-tempat yang berkaitan dengan ketinggian, yang dapat membatasi kehidupan sehari-hari mereka.
+Acrophobia dapat dipicu oleh pengalaman traumatis masa lalu, seperti jatuh dari tempat tinggi, atau bisa muncul tanpa penyebab yang jelas. Terapi perilaku kognitif dan terapi desensitisasi adalah metode yang umumnya digunakan untuk membantu individu mengatasi acrophobia. Dalam beberapa kasus, penggunaan teknik relaksasi dan obat-obatan tertentu juga dapat dipertimbangkan untuk mengelola gejala acrophobia.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_acrophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_acrophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	  <hbanner>      <div class="w3-padding w3-card-4 w3-center w3-black">ACROPHOBIA</div> </hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="tinggi.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack5()">BACK</button><back>
+</div>
+
+<!--ASTRAPHOBIA-->
+<div id="astraphobia" class="akhir w3-animate-right" style="display:none">
+	     <hbanner>   <div class="w3-padding w3-card-4 w3-center w3-black">ASTRAPHOBIA</div> </hbanner>
+<hpengertian>	<p class="w3-large w3-container">Astraphobia adalah istilah yang digunakan untuk menggambarkan ketakutan atau kecemasan yang berlebihan terhadap petir dan kilat. Orang yang mengalami astraphobia mungkin merasa sangat cemas atau takut ketika terjadi badai petir, yang bisa disertai dengan kilat yang menyilaukan dan suara petir yang menggelegar.
+Seperti banyak jenis phobia, astraphobia dapat bervariasi dalam tingkat keparahannya. Beberapa orang mungkin hanya merasa tidak nyaman atau cemas saat badai petir, sementara yang lain mungkin mengalami reaksi panik yang lebih intens. Phobia ini bisa dimulai dari pengalaman traumatis masa lalu yang terkait dengan petir atau kilat, atau mungkin muncul tanpa penyebab yang jelas.
+Pengelolaan astraphobia dapat melibatkan berbagai pendekatan, termasuk terapi kognitif, terapi desensitisasi, atau teknik relaksasi. Konsultasi dengan seorang profesional kesehatan mental dapat membantu individu mengatasi dan mengelola ketakutannya terhadap petir dan kilat.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_astraphobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_astraphobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	   <hbanner>     <div class="w3-padding w3-card-4 w3-center w3-black">ASTRAPHOBIA</div> </hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="petir.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack6()">BACK</button><back>
+</div>
+
+<!--NYCTOPHOBIA & ACHLUOPHOBIA-->
+<div id="nyctophobia_achluophobia" class="akhir w3-animate-right" style="display:none">
+	    <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">NYCTOPHOBIA & ACHLUOPHOBIA</div> </hbanner>
+	<hpengertian><p class="w3-large w3-container">Nyctophobia dan Achluophobia adalah istilah yang digunakan untuk menggambarkan ketakutan atau kecemasan terhadap kegelapan atau malam hari. Kedua istilah ini sering digunakan secara bergantian dan memiliki arti yang sama. Individu yang mengalami nyctophobia atau achluophobia mungkin merasa sangat cemas, takut, atau tidak nyaman ketika berada dalam keadaan gelap atau saat malam tiba.
+Phobia terhadap kegelapan dapat bervariasi dalam tingkat keparahannya. Beberapa orang mungkin hanya merasa tidak nyaman atau cemas ketika berada dalam keadaan gelap, sedangkan yang lain dapat mengalami reaksi yang lebih intens, bahkan hingga serangan panik.
+Seperti halnya dengan jenis phobia lainnya, penanganan nyctophobia atau achluophobia dapat melibatkan berbagai bentuk terapi, seperti terapi kognitif, terapi perilaku, atau terapi desensitisasi. Profesional kesehatan mental dapat membantu individu untuk mengatasi ketakutan mereka dan mengembangkan strategi pengelolaan yang efektif.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_nyctophobia_achluophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_nyctophobia_achluophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	      <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">NYCTOPHOBIA & ACHLUOPHOBIA</div> </hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="gelap.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack7()">BACK</button><back>
+</div>
+
+<!--COULROPHOBIA-->
+<div id="coulrophobia" class="akhir w3-animate-right" style="display:none">
+	   <hbanner>     <div class="w3-padding w3-card-4 w3-center w3-black">COULROPHOBIA</div> </hbanner>
+	<hpengertian><p class="w3-large w3-container">Coulrophobia adalah istilah yang digunakan untuk menggambarkan ketakutan atau kecemasan yang berlebihan terhadap badut. Orang yang mengalami coulrophobia mungkin merasa sangat takut atau cemas ketika berhadapan dengan badut atau bahkan hanya melihat gambar atau kostum badut.
+Seperti banyak jenis phobia, coulrophobia dapat berasal dari berbagai faktor, termasuk pengalaman traumatis masa lalu, penampilan badut yang tidak biasa, atau bahkan pengaruh media. Meskipun sebagian besar badut bertujuan untuk menyenangkan dan menghibur, persepsi subjektif terhadap mereka dapat menyebabkan reaksi ketakutan yang berlebihan pada orang dengan coulrophobia.
+Pengelolaan coulrophobia dapat melibatkan terapi perilaku kognitif, terapi desensitisasi, atau teknik relaksasi untuk membantu individu mengatasi ketakutan mereka terhadap badut. Penting untuk diingat bahwa setiap orang dapat memiliki tingkat ketakutan yang berbeda-beda, dan respons terhadap badut dapat sangat bervariasi antarindividu.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_coulrophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_coulrophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	   <hbanner>     <div class="w3-padding w3-card-4 w3-center w3-black">COULROPHOBIA</div> </hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="badut.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack8()">BACK</button><back>
+</div>
+
+<!--ENTOMOPHOBIA /INSECTOPHOBIA-->
+<div id="entomophobia_insectophobia" class="akhir w3-animate-right" style="display:none">
+	 <hbanner>   <div class="w3-padding w3-card-4 w3-center w3-black">ENTOMOPHOBIA / INSECTOPHOBIA</div></hbanner>
+	<hpengertian><p class="w3-large w3-container">Entomophobia atau Insectophobia adalah istilah yang digunakan untuk menggambarkan ketakutan yang berlebihan dan tidak rasional terhadap serangga atau hewan-hewan kecil yang sering dianggap sebagai serangga, seperti laba-laba. Orang yang mengalami entomophobia atau insectophobia dapat merasakan tingkat kecemasan yang tinggi atau bahkan panik ketika berhadapan dengan serangga atau hanya memikirkan keberadaan mereka.
+Seperti phobia lainnya, entomophobia dapat berasal dari berbagai pengalaman, termasuk pengalaman traumatis masa kecil, informasi negatif, atau kejadian negatif yang terkait dengan serangga. Reaksi yang timbul bisa sangat bervariasi, mulai dari rasa tidak nyaman hingga serangan kecemasan yang parah.
+Terapi kognitif, terapi perilaku, atau terapi desensitisasi adalah beberapa pendekatan yang dapat digunakan untuk membantu individu mengelola atau mengatasi entomophobia. Konsultasi dengan seorang profesional kesehatan mental dapat memberikan dukungan dan panduan yang diperlukan untuk mengatasi ketakutan tersebut.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_entomophobia_insectophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_entomophobia_insectophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	   <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">ENTOMOPHOBIA / INSECTOPHOBIA</div></hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="serangga.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack9()">BACK</button><back>
+</div>
+
+<!--PHOTOPHOBIA-->
+<div id="photophobia" class="akhir w3-animate-right" style="display:none">
+	   <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">PHOTOPHOBIA</div></hbanner>
+<hpengertian>	<p class="w3-large w3-container">Phobia terhadap cahaya atau terang disebut sebagai "photophobia." Photophobia adalah kondisi di mana seseorang mengalami kepekaan atau ketakutan yang berlebihan terhadap cahaya, baik cahaya alami maupun cahaya buatan. Orang dengan photophobia mungkin merasa tidak nyaman atau bahkan mengalami rasa sakit ketika terpapar cahaya yang terlalu terang.
+Photophobia bisa menjadi gejala dari beberapa kondisi kesehatan, termasuk infeksi mata, migrain, penyakit mata, atau cedera pada mata. Namun, dalam beberapa kasus, photophobia juga dapat terjadi tanpa adanya masalah medis yang mendasarinya.
+Penanganan photophobia tergantung pada penyebabnya. Jika photophobia disebabkan oleh masalah kesehatan mata atau kondisi medis lainnya, perawatan akan difokuskan pada mengatasi akar penyebabnya. Jika photophobia merupakan gejala dari kondisi seperti migrain, terapis atau dokter mata mungkin memberikan saran terkait manajemen gejala dan pengurangan paparan terhadap cahaya yang menyilaukan.
+Jika seseorang mengalami photophobia tanpa penyebab medis yang jelas, berkonsultasilah dengan profesional kesehatan, seperti dokter mata, untuk evaluasi lebih lanjut dan penanganan yang sesuai.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_photophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_photophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	     <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">PHOTOPHOBIA</div></hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="cahaya.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack10()">BACK</button><back>
+</div>
+
+<!--SCOPOPHOBIA / OPHTHALMOPHOBIA-->
+<div id="scopophobia_phthalmophobia" class="akhir w3-animate-right" style="display:none">
+	  <hbanner>     <div class="w3-padding w3-card-4 w3-center w3-black">SCOPOPHOBIA / OPHTHALMOPHOBIA</div></hbanner>
+	<hpengertian><p class="w3-large w3-container">Scopophobia atau Ophthalmophobia adalah istilah yang digunakan untuk menggambarkan ketakutan yang berlebihan terhadap dicermati atau diperhatikan oleh orang lain. Orang yang mengalami scopophobia mungkin merasa sangat tidak nyaman atau cemas ketika menjadi pusat perhatian atau ketika mereka merasa diawasi oleh orang lain.
+Gejala scopophobia bisa bervariasi, dan seseorang yang mengalami kondisi ini dapat mengalami reaksi fisik dan emosional, seperti keringat berlebihan, denyut jantung yang cepat, gemetar, atau bahkan serangan panik. Kondisi ini dapat mempengaruhi kehidupan sehari-hari seseorang, terutama dalam situasi sosial atau kerja.
+Penanganan scopophobia melibatkan berbagai pendekatan terapi, termasuk terapi kognitif, terapi perilaku, atau terapi desensitisasi. Terapis dapat membantu individu untuk mengidentifikasi pemikiran negatif atau irasional yang mendasari ketakutan mereka dan bekerja bersama mereka untuk mengembangkan keterampilan dan strategi pengelolaan yang lebih positif. Jika scopophobia memiliki dampak signifikan pada kehidupan seseorang, bantuan profesional dapat sangat bermanfaat untuk membantu mengatasi masalah ini.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_scopophobia_phthalmophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_scopophobia_phthalmophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	     <hbanner>  <div class="w3-padding w3-card-4 w3-center w3-black">SCOPOPHOBIA / OPHTHALMOPHOBIA</div></hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="diperhatikan.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack11()">BACK</button><back>
+</div>
+
+<!--AILUROPHOBIA-->
+<div id="ailurophobia" class="akhir w3-animate-right" style="display:none">
+	  <hbanner>     <div class="w3-padding w3-card-4 w3-center w3-black">AILUROPHOBIA</div></hbanner>
+	<hpengertian><p class="w3-large w3-container">Phobia terhadap kucing disebut sebagai ailurophobia. Ailurophobia adalah istilah yang digunakan untuk menggambarkan ketakutan yang berlebihan dan tidak rasional terhadap kucing. Orang yang mengalami ailurophobia mungkin merasa sangat cemas, takut, atau panik ketika berada di dekat kucing atau bahkan hanya melihat gambar atau video kucing.
+Seperti halnya dengan phobia lainnya, ailurophobia bisa dipengaruhi oleh berbagai faktor, termasuk pengalaman traumatis masa kecil, ketidaknyamanan terhadap perilaku kucing, atau bahkan ketakutan akan gigitan atau garukan dari kucing.
+Penanganan ailurophobia dapat melibatkan berbagai bentuk terapi, seperti terapi kognitif, terapi perilaku, atau terapi desensitisasi. Profesional kesehatan mental dapat membantu individu untuk mengatasi ketakutan mereka dan mengembangkan strategi pengelolaan yang efektif. Jika ailurophobia sangat membatasi kehidupan sehari-hari seseorang, konsultasi dengan seorang profesional dapat menjadi langkah penting untuk memperoleh bantuan yang diperlukan.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_ailurophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_ailurophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	      <hbanner> <div class="w3-padding w3-card-4 w3-center w3-black">AILUROPHOBIA</div></hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="cat.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack12()">BACK</button><back>
+</div>
+
+<!--AUTOMATONOPHOBIA-->
+<div id="automatonophobia" class="akhir w3-animate-right" style="display:none">
+	    <hbanner>   <div class="w3-padding w3-card-4 w3-center w3-black">AUTOMATONOPHOBIA</div></hbanner>
+	<hpengertian><p class="w3-large w3-container">Automatonophobia adalah istilah yang digunakan untuk menggambarkan ketakutan atau kecemasan terhadap boneka, patung, atau benda-benda buatan manusia yang memiliki bentuk seperti manusia. Orang yang mengalami automatonophobia mungkin merasa tidak nyaman, cemas, atau ketakutan ketika berada di sekitar objek-objek tersebut.
+Ketakutan ini dapat berkisar dari tingkat kecemasan yang ringan hingga parah, dan bisa bervariasi antarindividu. Beberapa orang mungkin merasa tidak nyaman hanya saat melihat gambar atau video boneka atau patung, sementara yang lain mungkin mengalami kecemasan yang signifikan ketika berada di dekat objek-objek tersebut.
+Seperti halnya phobia lainnya, automatonophobia dapat memiliki dampak yang signifikan pada kehidupan sehari-hari seseorang jika tidak diatasi. Terapi perilaku kognitif dan terapi berbicara adalah beberapa pendekatan yang dapat membantu individu mengelola atau mengatasi ketakutan ini. Jika automatonophobia atau ketakutan lainnya mengganggu kehidupan sehari-hari Anda, sebaiknya berkonsultasi dengan profesional kesehatan mental untuk bantuan dan dukungan lebih lanjut.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_automatonophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_automatonophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	  <hbanner>     <div class="w3-padding w3-card-4 w3-center w3-black">AUTOMATONOPHOBIA</div></hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="manekin.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack13()">BACK</button><back>
+</div>
+
+<!--TRYPANOPHOBIA-->
+<div id="trypanophobia" class="akhir w3-animate-right" style="display:none">
+	   <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">TRYPANOPHOBIA</div></hbanner>
+	<hpengertian><p class="w3-large w3-container">Trypanophobia adalah istilah yang digunakan untuk merujuk pada ketakutan atau kecemasan yang berlebihan terhadap jarum atau prosedur suntik. Orang yang mengalami trypanophobia dapat merasakan kecemasan atau rasa takut yang sangat intens ketika dihadapkan pada situasi yang melibatkan penggunaan jarum, seperti saat akan disuntik atau melakukan pengambilan darah.
+Gejala trypanophobia dapat bervariasi, termasuk detak jantung yang cepat, pernapasan yang fluktuatif, berkeringat berlebihan, gemetar, atau bahkan mungkin serangan panik. Kondisi ini dapat memengaruhi kehidupan sehari-hari seseorang, terutama jika ketakutan tersebut menyebabkan mereka menghindari perawatan medis yang diperlukan.
+Terapi perilaku kognitif, terapi desensitisasi sistematis, dan teknik relaksasi adalah beberapa metode yang dapat membantu individu mengelola atau mengatasi trypanophobia. Konsultasi dengan seorang profesional kesehatan mental dapat membantu menilai tingkat keparahan ketakutan dan merancang rencana perawatan yang sesuai.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_trypanophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_trypanophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	 <hbanner>      <div class="w3-padding w3-card-4 w3-center w3-black">TRYPANOPHOBIA</div></hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="suntik.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack14()">BACK</button><back>
+</div>
+
+<!--CHROMOPHOBIA / CHROMATOPHOBIA-->
+<div id="chromophobia_chromatophobia" class="akhir w3-animate-right" style="display:none">
+	   <hbanner>    <div class="w3-padding w3-card-4 w3-center w3-black">CHROMOPHOBIA / CHROMATOPHOBIA</div></hbanner>
+<hpengertian>	<p class="w3-large w3-container">Chromophobia atau Chromatophobia adalah istilah yang mengacu pada ketakutan atau kecemasan yang berlebihan terhadap warna atau objek berwarna tertentu. Individu yang mengalami chromophobia mungkin merasa sangat cemas atau takut terhadap warna-warna tertentu atau kumpulan warna.
+Ketakutan ini dapat mencakup berbagai tingkat keparahan, mulai dari ketidaknyamanan ringan hingga reaksi kecemasan yang parah. Chromophobia dapat memengaruhi berbagai aspek kehidupan sehari-hari, termasuk pemilihan pakaian, dekorasi ruangan, atau aktivitas yang melibatkan warna-warna tertentu.
+Seperti kebanyakan phobia, pengelolaan chromophobia dapat melibatkan berbagai bentuk terapi, termasuk terapi perilaku kognitif, desensitisasi sistematis, atau terapi berbicara. Konsultasi dengan seorang profesional kesehatan mental dapat membantu individu mengidentifikasi sumber ketakutannya dan mengembangkan strategi untuk mengatasi chromophobia. Penting untuk dicatat bahwa setiap orang memiliki preferensi warna dan respons emosional yang berbeda terhadap warna, dan chromophobia mungkin lebih signifikan ketika menimbulkan gangguan pada kehidupan sehari-hari.</p></hpengertian>
+<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="openAkhir(event, 'pengertian_chromophobia_chromatophobia')">NEXT</button></back>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+<warning><img class="w3-animate-fading" src="peringatan.png" style="height:50%; width:50%;"></warning>
+	<warning2>"Peringatan bagi mereka yang menderita phobia di atas, tolong untuk tidak menekan tombol 'Next' untuk menghindari tampilnya video."</warning2>
+</div>
+
+<div id="pengertian_chromophobia_chromatophobia" class="akhir w3-animate-right w3-card-4" style="display:none">
+	    <hbanner>   <div class="w3-padding w3-card-4 w3-center w3-black">CHROMOPHOBIA / CHROMATOPHOBIA</div></hbanner>
+    <video width="100%" height="78%" controls autoplay loop>
+            <source src="warna.mp4" type="video/mp4">.
+        </video>
+	<back><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goBack15()">BACK</button><back>
+</div>
+
+<!--AKHIR KATA-->
+<hpengertian><div id="akhirkata" class="w3-container w3-center w3-animate-bottom akhir" style="display:none; font-size :20px;"><br><br><br><br><br>
+<p>MOHON MAAF ATAS SEGALA KEKURANGAN BAIK DARI SEGI TAMPILAN MAUPUN ISINYA
+<p>TERIMA KASIH<br><br>
+</hpengertian>
+<audio controls autoplay loop>
+  <source src="finalchapter.mp3" type="audio/mp3">
+</audio>
+<backk><button class="w3-bar-item w3-button w3-animate-left w3-black w3-round-xxlarge tab" onclick="goHalamanawal()">BACK</button></backk>
+</div>
+
+<script>
+function toggleSidebar() {
+  var sidebar = document.getElementById('mySidebar'); 
+  if (sidebar.style.display === 'none') {
+    sidebar.style.display = 'block';
+  } else {
+    sidebar.style.display = 'none';
+  }
+}
+function openAkhir(evt, akhir) {
+ var i, x, tablinks;
+ var x = document.getElementsByClassName("akhir");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none"; 
+ }
+ tablinks = document.getElementsByClassName("tab"); 
+  for (i = 0; i < x.length; i++) { 
+    tablinks[i].className = tablinks[i].className.replace(" w3-grey", "");  
+  } 
+  document.getElementById(akhir).style.display = "block"; 
+  evt.currentTarget.className += " w3-grey"; 
+} 
+function goHalamanawal() {
+    var home = document.getElementById('home');
+    home.style.display = 'none';
+	var biodata = document.getElementById('biodata');
+    biodata.style.display = 'none';
+	var definisi = document.getElementById('definisi');
+    definisi.style.display = 'none';
+	var ciriciri = document.getElementById('ciriciri');
+    ciriciri.style.display = 'none';
+	var caramengatasi = document.getElementById('caramengatasi');
+    caramengatasi.style.display = 'none';
+	var akhirkata = document.getElementById('akhirkata');
+    akhirkata.style.display = 'none';
+    var pengertian_megalophobia = document.getElementById('pengertian_megalophobia');
+    pengertian_megalophobia.style.display = 'none';
+    var megalophobia = document.getElementById('megalophobia');
+    megalophobia.style.display = 'none';
+	var pengertian_claustrophobia = document.getElementById('pengertian_claustrophobia');
+    pengertian_claustrophobia.style.display = 'none'; 
+    var claustrophobia = document.getElementById('claustrophobia');
+    claustrophobia.style.display = 'none';
+	var pengertian_trypophobia = document.getElementById('pengertian_trypophobia');
+    pengertian_trypophobia.style.display = 'none';
+    var trypophobia = document.getElementById('trypophobia');
+    trypophobia.style.display = 'none';
+	var pengertian_thalassophobia = document.getElementById('pengertian_thalassophobia');
+    pengertian_thalassophobia.style.display = 'none';
+    var thalassophobia = document.getElementById('thalassophobia');
+    thalassophobia.style.display = 'none';
+	var pengertian_acrophobia = document.getElementById('pengertian_acrophobia');
+    pengertian_acrophobia.style.display = 'none';
+    var acrophobia = document.getElementById('acrophobia');
+    acrophobia.style.display = 'none';
+	var pengertian_astraphobia = document.getElementById('pengertian_astraphobia');
+    pengertian_astraphobia.style.display = 'none';
+    var astraphobia = document.getElementById('astraphobia');
+    astraphobia.style.display = 'none';
+	var pengertian_nyctophobia_achluophobia = document.getElementById('pengertian_nyctophobia_achluophobia');
+    pengertian_nyctophobia_achluophobia.style.display = 'none';
+    var nyctophobia_achluophobia = document.getElementById('nyctophobia_achluophobia');
+    nyctophobia_achluophobia.style.display = 'none';
+	var pengertian_coulrophobia = document.getElementById('pengertian_coulrophobia');
+    pengertian_coulrophobia.style.display = 'none';
+    var coulrophobia = document.getElementById('coulrophobia');
+    coulrophobia.style.display = 'none';
+	var pengertian_entomophobia_insectophobia = document.getElementById('pengertian_entomophobia_insectophobia');
+    pengertian_entomophobia_insectophobia.style.display = 'none';
+    var entomophobia_insectophobia = document.getElementById('entomophobia_insectophobia');
+    entomophobia_insectophobia.style.display = 'none';
+	 var pengertian_photophobia = document.getElementById('pengertian_photophobia');
+    pengertian_photophobia.style.display = 'none';
+    var photophobia = document.getElementById('photophobia');
+    photophobia.style.display = 'none';
+	var pengertian_scopophobia_phthalmophobia = document.getElementById('pengertian_scopophobia_phthalmophobia');
+    pengertian_scopophobia_phthalmophobia.style.display = 'none';
+    var scopophobia_phthalmophobia = document.getElementById('scopophobia_phthalmophobia');
+    scopophobia_phthalmophobia.style.display = 'none';
+	var pengertian_ailurophobia = document.getElementById('pengertian_ailurophobia');
+    pengertian_ailurophobia.style.display = 'none';
+    var ailurophobia = document.getElementById('ailurophobia');
+    ailurophobia.style.display = 'none';
+	var pengertian_automatonophobia = document.getElementById('pengertian_automatonophobia');
+    pengertian_automatonophobia.style.display = 'none';
+    var automatonophobia = document.getElementById('automatonophobia');
+    automatonophobia.style.display = 'none';
+	var pengertian_trypanophobia = document.getElementById('pengertian_trypanophobia');
+    pengertian_trypanophobia.style.display = 'none';
+    var trypanophobia = document.getElementById('trypanophobia');
+    trypanophobia.style.display = 'none';
+	var pengertian_chromophobia_chromatophobia = document.getElementById('pengertian_chromophobia_chromatophobia');
+    pengertian_chromophobia_chromatophobia.style.display = 'none';
+    var chromophobia_chromatophobia = document.getElementById('chromophobia_chromatophobia');
+    chromophobia_chromatophobia.style.display = 'none';
+}
+function goBack1() {
+    var pengertian_megalophobia = document.getElementById('pengertian_megalophobia');
+    pengertian_megalophobia.style.display = 'none';
+    
+    var megalophobia = document.getElementById('megalophobia');
+    megalophobia.style.display = 'block';
+}
+function goBack2() {
+    var pengertian_claustrophobia = document.getElementById('pengertian_claustrophobia');
+    pengertian_claustrophobia.style.display = 'none';
+    
+    var claustrophobia = document.getElementById('claustrophobia');
+    claustrophobia.style.display = 'block';
+}
+function goBack3() {
+    var pengertian_trypophobia = document.getElementById('pengertian_trypophobia');
+    pengertian_trypophobia.style.display = 'none';
+    
+    var trypophobia = document.getElementById('trypophobia');
+    trypophobia.style.display = 'block';
+}
+function goBack4() {
+    var pengertian_thalassophobia = document.getElementById('pengertian_thalassophobia');
+    pengertian_thalassophobia.style.display = 'none';
+    
+    var thalassophobia = document.getElementById('thalassophobia');
+    thalassophobia.style.display = 'block';
+}
+function goBack5() {
+    var pengertian_acrophobia = document.getElementById('pengertian_acrophobia');
+    pengertian_acrophobia.style.display = 'none';
+    
+    var acrophobia = document.getElementById('acrophobia');
+    acrophobia.style.display = 'block';
+}
+function goBack6() {
+    var pengertian_astraphobia = document.getElementById('pengertian_astraphobia');
+    pengertian_astraphobia.style.display = 'none';
+    
+    var astraphobia = document.getElementById('astraphobia');
+    astraphobia.style.display = 'block';
+}
+function goBack7() {
+    var pengertian_nyctophobia_achluophobia = document.getElementById('pengertian_nyctophobia_achluophobia');
+    pengertian_nyctophobia_achluophobia.style.display = 'none';
+    
+    var nyctophobia_achluophobia = document.getElementById('nyctophobia_achluophobia');
+    nyctophobia_achluophobia.style.display = 'block';
+}
+function goBack8() {
+    var pengertian_coulrophobia = document.getElementById('pengertian_coulrophobia');
+    pengertian_coulrophobia.style.display = 'none';
+    
+    var coulrophobia = document.getElementById('coulrophobia');
+    coulrophobia.style.display = 'block';
+}
+function goBack9() {
+    var pengertian_entomophobia_insectophobia = document.getElementById('pengertian_entomophobia_insectophobia');
+    pengertian_entomophobia_insectophobia.style.display = 'none';
+    
+    var entomophobia_insectophobia = document.getElementById('entomophobia_insectophobia');
+    entomophobia_insectophobia.style.display = 'block';
+}
+function goBack10() {
+    var pengertian_photophobia = document.getElementById('pengertian_photophobia');
+    pengertian_photophobia.style.display = 'none';
+    
+    var photophobia = document.getElementById('photophobia');
+    photophobia.style.display = 'block';
+}
+function goBack11() {
+    var pengertian_scopophobia_phthalmophobia = document.getElementById('pengertian_scopophobia_phthalmophobia');
+    pengertian_scopophobia_phthalmophobia.style.display = 'none';
+    
+    var scopophobia_phthalmophobia = document.getElementById('scopophobia_phthalmophobia');
+    scopophobia_phthalmophobia.style.display = 'block';
+}
+function goBack12() {
+    var pengertian_ailurophobia = document.getElementById('pengertian_ailurophobia');
+    pengertian_ailurophobia.style.display = 'none';
+    
+    var ailurophobia = document.getElementById('ailurophobia');
+    ailurophobia.style.display = 'block';
+}
+function goBack13() {
+    var pengertian_automatonophobia = document.getElementById('pengertian_automatonophobia');
+    pengertian_automatonophobia.style.display = 'none';
+    
+    var automatonophobia = document.getElementById('automatonophobia');
+    automatonophobia.style.display = 'block';
+}
+function goBack14() {
+    var pengertian_trypanophobia = document.getElementById('pengertian_trypanophobia');
+    pengertian_trypanophobia.style.display = 'none';
+    
+    var trypanophobia = document.getElementById('trypanophobia');
+    trypanophobia.style.display = 'block';
+}
+function goBack15() {
+    var pengertian_chromophobia_chromatophobia = document.getElementById('pengertian_chromophobia_chromatophobia');
+    pengertian_chromophobia_chromatophobia.style.display = 'none';
+    
+    var chromophobia_chromatophobia = document.getElementById('chromophobia_chromatophobia');
+    chromophobia_chromatophobia.style.display = 'block';
+}
+</script>
+</body>
+</html>
